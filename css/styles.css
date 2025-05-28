@@ -51,6 +51,24 @@ p span {
   font-weight: 700;
 }
 
+#twinkle {
+  position: relative;
+  overflow: hidden;
+}
+
+.twinkle-effect {
+  position: absolute;
+  top: -50%;
+  left: -100%;
+  width: 100%;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.5);
+  transform: rotate(45deg) scale(1);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 10;
+}
+
 .pt-50 {
   padding-top: 50px;
 }
@@ -467,16 +485,15 @@ p span {
 .section-5 {
   position: relative;
   width: calc(100% - 65px);
-  justify-self: flex-end;
-  background: #ff7e00;
-  box-shadow: 0px 20px 30px 0px rgba(255, 255, 255, 0.2509803922) inset, 4px 4px 4px 0px rgba(0, 0, 0, 0.3019607843);
-  border-radius: 50px;
-  padding: 20px;
+  height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 10px;
+}
+.section-5 .dialogue {
+  z-index: 100;
 }
 .section-5 .dialogue div {
   position: absolute;
@@ -509,7 +526,21 @@ p span {
   width: auto;
   height: 85px;
 }
-.section-5 h4 {
+.section-5 .content {
+  position: relative;
+  width: 100%;
+  justify-self: flex-end;
+  background: #ff7e00;
+  box-shadow: 0px 20px 30px 0px rgba(255, 255, 255, 0.2509803922) inset, 4px 4px 4px 0px rgba(0, 0, 0, 0.3019607843);
+  border-radius: 50px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.section-5 .content h4 {
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2509803922);
   color: #ffffff;
   font-weight: 900;
@@ -519,11 +550,11 @@ p span {
   text-align: center;
 }
 @media screen and (max-width: 500px) {
-  .section-5 h4 {
+  .section-5 .content h4 {
     font-size: 18px;
   }
 }
-.section-5 img {
+.section-5 .content img {
   width: 25px;
   height: 25px;
 }
@@ -654,7 +685,7 @@ p span {
 }
 .section-6 section .button-prev {
   position: absolute;
-  bottom: calc(50% - 35px);
+  top: calc(50% - 35px);
   left: -30px;
   transform: rotate(180deg);
   width: 64px;
@@ -668,7 +699,7 @@ p span {
 @media screen and (max-width: 500px) {
   .section-6 section .button-prev {
     width: 54px;
-    bottom: calc(50% - 25px);
+    top: calc(50% - 25px);
     left: -20px;
   }
 }
@@ -688,6 +719,26 @@ p span {
     width: 54px;
     top: calc(50% - 25px);
     right: -20px;
+  }
+}
+.section-6 section .button-icon {
+  width: 100%;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 2px solid #000000;
+}
+.section-6 section .button-icon img {
+  width: 30px;
+  height: 30px;
+}
+@media screen and (max-width: 500px) {
+  .section-6 section .button-icon img {
+    width: 20px;
+    height: 20px;
   }
 }
 
