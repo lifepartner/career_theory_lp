@@ -7,6 +7,7 @@
   background-position: bottom;
   background-size: cover;
   padding: 15px;
+  padding-bottom: 0;
   overflow: hidden;
 
   .__title {
@@ -36,8 +37,9 @@
       letter-spacing: 0%;
       text-align: center;
       color: #ffff56;
-      -webkit-text-stroke: 2px #ff7e00;
-      font-weight: bolder;
+      -webkit-text-stroke: 0.5px #ffff56;
+      font-weight: 900;
+      text-shadow: 3px 0 #ff7e00, -3px 0 #ff7e00, 0 1px #ff7e00, 0 -3px #ff7e00;
 
       @media screen and (max-width: 500px) {
         font-size: 24px;
@@ -45,8 +47,7 @@
       }
 
       span {
-        font-weight: bold;
-        -webkit-text-stroke: 0px;
+        -webkit-text-stroke: 0.5px #fff;
         font-size: 24px;
         font-weight: 600;
         color: #fff;
@@ -83,6 +84,7 @@
     .tutor {
       width: 30%;
       position: relative;
+      overflow: visible;
       @media screen and (max-width: 768px) {
         width: 40%;
       }
@@ -145,6 +147,7 @@
       }
 
       .content-3 {
+        padding-bottom: 15px;
         @media screen and (max-width: 400px) {
           width: 80%;
         }
@@ -531,7 +534,7 @@
     width: 100%;
     background: url("../img/bg_section_6_title.png");
     background-size: 100% 100%;
-    padding: 20px;
+    padding: 18.5px;
     margin-bottom: -1px;
 
     h4 {

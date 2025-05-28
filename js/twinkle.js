@@ -1,4 +1,4 @@
-const button = document.getElementById("twinkle");
+const buttons = document.querySelectorAll("#twinkle");
 
 function addShineEffect(el) {
   const shine = document.createElement("div");
@@ -50,7 +50,7 @@ function addShineEffect(el) {
   }, 2000);
 }
 
-// Run the shine effect every 1 second
+// Run the shine effect on all .twinkle elements every 2 seconds
 setInterval(() => {
-  addShineEffect(button);
+  buttons.forEach((el) => addShineEffect(el));
 }, 2000);
