@@ -21,6 +21,7 @@ a {
 
 .container {
   width: 100%;
+  padding: 0 30px;
   max-width: 1000px;
   display: flex;
   justify-content: center;
@@ -559,14 +560,6 @@ p span {
   height: 25px;
 }
 
-.section-6 {
-  width: calc(100% - 64px) !important;
-}
-@media screen and (max-width: 500px) {
-  .section-6 {
-    width: calc(100% - 44px) !important;
-  }
-}
 .section-6 .header {
   width: 100%;
   background: url("../img/bg_section_6_title.png");

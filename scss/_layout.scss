@@ -527,12 +527,6 @@
 }
 
 .section-6 {
-  width: calc(100% - 64px) !important;
-
-  @media screen and (max-width: 500px) {
-    width: calc(100% - 44px) !important;
-  }
-
   .header {
     width: 100%;
     background: url("../img/bg_section_6_title.png");
