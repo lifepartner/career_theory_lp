@@ -88,7 +88,7 @@ p span {
   padding-bottom: 0;
   overflow: hidden;
 }
-.section-1 .__title {
+.section-1__title {
   background: #ff7e00;
   border: 3px solid #ff7e00;
   border-radius: 10px;
@@ -102,11 +102,11 @@ p span {
   padding: 1px 10px;
 }
 @media screen and (max-width: 500px) {
-  .section-1 .__title {
+  .section-1__title {
     font-size: 18px;
   }
 }
-.section-1 .title h2 {
+.section-1__title-text {
   margin-top: -18px;
   font-weight: 900;
   font-size: 40px;
@@ -115,16 +115,15 @@ p span {
   text-align: center;
   color: #ffff56;
   -webkit-text-stroke: 0.5px #ffff56;
-  font-weight: 900;
   text-shadow: 3px 0 #ff7e00, -3px 0 #ff7e00, 0 1px #ff7e00, 0 -3px #ff7e00;
 }
 @media screen and (max-width: 500px) {
-  .section-1 .title h2 {
+  .section-1__title-text {
     font-size: 24px;
     margin-top: -10px;
   }
 }
-.section-1 .title h2 span {
+.section-1__title-text--sub {
   -webkit-text-stroke: 0.5px #fff;
   font-size: 24px;
   font-weight: 600;
@@ -132,11 +131,11 @@ p span {
   text-align: center;
 }
 @media screen and (max-width: 500px) {
-  .section-1 .title h2 span {
+  .section-1__title-text--sub {
     font-size: 14px;
   }
 }
-.section-1 .subContent {
+.section-1__sub-content {
   margin-top: 20px;
   background: #ffffff;
   box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
@@ -144,10 +143,10 @@ p span {
   color: #000000;
   padding: 10px;
 }
-.section-1 .subContent span {
+.section-1__sub-content-highlight {
   background-image: linear-gradient(to bottom, transparent 60%, rgba(255, 126, 0, 0.2509803922));
 }
-.section-1 .content-wrapper {
+.section-1__content-wrapper {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -155,17 +154,17 @@ p span {
   align-items: end;
   overflow: hidden;
 }
-.section-1 .content-wrapper .tutor {
+.section-1__content-wrapper-tutor {
   width: 30%;
   position: relative;
   overflow: visible;
 }
 @media screen and (max-width: 768px) {
-  .section-1 .content-wrapper .tutor {
+  .section-1__content-wrapper-tutor {
     width: 40%;
   }
 }
-.section-1 .content-wrapper .tutor img {
+.section-1__content-wrapper-tutor-image {
   position: absolute;
   bottom: -15px;
   right: -100px;
@@ -174,18 +173,18 @@ p span {
   background-position: bottom;
 }
 @media screen and (max-width: 768px) {
-  .section-1 .content-wrapper .tutor img {
+  .section-1__content-wrapper-tutor-image {
     width: 400px;
     right: -90px;
   }
 }
 @media screen and (max-width: 415px) {
-  .section-1 .content-wrapper .tutor img {
+  .section-1__content-wrapper-tutor-image {
     width: 350px;
     right: -75px;
   }
 }
-.section-1 .content-wrapper .content {
+.section-1__content-wrapper-content {
   width: 70%;
   margin-top: 20px;
   display: flex;
@@ -195,62 +194,67 @@ p span {
   gap: 10px;
 }
 @media screen and (max-width: 768px) {
-  .section-1 .content-wrapper .content {
+  .section-1__content-wrapper-content {
     width: 60%;
   }
 }
-.section-1 .content-wrapper .content h2 {
+.section-1__content-wrapper-content-title {
+  width: fit-content;
+  padding: 1px 5px;
   color: #ffffff;
   margin-bottom: 10px;
+  background: #ff7e00;
+  border: 3px solid #ff7e00;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2509803922), 4px 4px 4px 0px rgba(0, 0, 0, 0.2509803922) inset;
 }
-.section-1 .content-wrapper .content span {
+.section-1__content-wrapper-content-highlight {
   background-image: linear-gradient(to bottom, transparent 60%, rgba(255, 126, 0, 0.2509803922));
 }
-.section-1 .content-wrapper .content .content-1 {
+.section-1__content-wrapper-content-item--1 {
   width: 140%;
 }
 @media screen and (max-width: 768px) {
-  .section-1 .content-wrapper .content .content-1 {
+  .section-1__content-wrapper-content-item--1 {
     width: 160%;
   }
 }
 @media screen and (max-width: 768px) {
-  .section-1 .content-wrapper .content .content-2 {
+  .section-1__content-wrapper-content-item--2 {
     width: 160%;
   }
 }
-.section-1 .content-wrapper .content .content-3 {
+.section-1__content-wrapper-content-item--3 {
   padding-bottom: 15px;
 }
 @media screen and (max-width: 768px) {
-  .section-1 .content-wrapper .content .content-3 {
+  .section-1__content-wrapper-content-item--3 {
     width: 120%;
   }
 }
 @media screen and (max-width: 600px) {
-  .section-1 .content-wrapper .content .content-3 {
+  .section-1__content-wrapper-content-item--3 {
     width: 110%;
   }
 }
 @media screen and (max-width: 500px) {
-  .section-1 .content-wrapper .content .content-3 {
+  .section-1__content-wrapper-content-item--3 {
     width: 92%;
   }
 }
 @media screen and (max-width: 415px) {
-  .section-1 .content-wrapper .content .content-3 {
+  .section-1__content-wrapper-content-item--3 {
     width: 85%;
   }
 }
-
-.section-2 .content {
+.section-2__content {
   width: 100%;
   height: 100px;
   background: url("../img/bg_section_2.png") no-repeat center, center;
   background-size: cover;
   position: relative;
 }
-.section-2 .medal {
+.section-2__medal {
   position: absolute;
   top: -10px;
   left: 10px;
@@ -260,11 +264,11 @@ p span {
   flex-direction: row;
   gap: 10px;
 }
-.section-2 .medal img {
+.section-2__medal-image {
   width: 65px;
   height: 65px;
 }
-.section-2 .medal h3 {
+.section-2__medal-title {
   font-weight: 900;
   font-size: 26px;
   line-height: 150%;
@@ -274,11 +278,11 @@ p span {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2509803922);
 }
 @media screen and (max-width: 500px) {
-  .section-2 .medal h3 {
+  .section-2__medal-title {
     font-size: 20px;
   }
 }
-.section-2 .rate {
+.section-2__rate {
   position: absolute;
   top: -5px;
   right: 0;
@@ -293,7 +297,7 @@ p span {
   background: #ffffff;
   padding: 5px;
 }
-.section-2 .rate p {
+.section-2__rate-text {
   font-weight: 500;
   font-size: 14px;
   font-weight: bold;
@@ -301,36 +305,35 @@ p span {
   letter-spacing: 0%;
   color: #000000;
 }
-.section-2 .rate p span {
+@media screen and (max-width: 500px) {
+  .section-2__rate-text {
+    font-size: 10px;
+  }
+}
+.section-2__rate-text--highlight {
   font-size: 20px;
   color: #ed5a37;
   font-weight: bold;
 }
 @media screen and (max-width: 500px) {
-  .section-2 .rate p span {
+  .section-2__rate-text--highlight {
     font-size: 14px;
   }
 }
-@media screen and (max-width: 500px) {
-  .section-2 .rate p {
-    font-size: 10px;
-  }
-}
-.section-2 .rate img {
+.section-2__rate-image {
   width: auto;
   height: 15px;
 }
-
 .section-3 {
   gap: 10px;
 }
-.section-3 .title {
+.section-3__title {
   background: url("../img/bg_section_6_title.png") no-repeat center, center;
   background-size: 100% 100%;
   width: 100%;
   padding: 15px;
 }
-.section-3 .title h4 {
+.section-3__title-text {
   font-weight: 900;
   font-size: 30px;
   line-height: 150%;
@@ -339,41 +342,44 @@ p span {
   color: #ffffff;
 }
 @media screen and (max-width: 500px) {
-  .section-3 .title h4 {
+  .section-3__title-text {
     font-size: 20px;
   }
 }
-.section-3 .content div {
+.section-3__content-item {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.section-3 .content div img {
+.section-3__content-item-image {
   width: 60px;
   height: 60px;
 }
-.section-3 .content div p {
+.section-3__content-item-text {
   font-size: 24px;
   line-height: 150%;
   letter-spacing: 0%;
 }
 @media screen and (max-width: 500px) {
-  .section-3 .content div p {
+  .section-3__content-item-text {
     font-size: 14px;
   }
 }
-.section-3 .content div p span {
+.section-3__content-item-text--highlight {
   font-weight: 700;
   color: #ed5a37;
 }
-
-.section-4 .table {
+.section-4__table {
   width: 100%;
-  padding: 1px;
+  padding: 2px;
   border: 1px solid #9ddbca;
   border-collapse: collapse;
 }
-.section-4 .table thead th {
+.section-4__table .table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.section-4__table .table__header {
   width: 100%;
   padding: 15px;
   background: #9ddbca;
@@ -384,31 +390,23 @@ p span {
   text-align: center;
   color: #2c897a;
 }
-.section-4 .table tbody tr {
+.section-4__table .table__row {
   border-bottom: 1px solid #9ddbca;
 }
-.section-4 .table tbody tr:last-child {
+.section-4__table .table__row:last-child {
   border-bottom: none;
 }
-.section-4 .table tbody tr.rate {
+.section-4__table .table__row--rate {
   padding: 23px;
 }
-.section-4 .table tbody tr.rate img {
-  height: 32px;
-  width: auto;
-}
-@media screen and (max-width: 500px) {
-  .section-4 .table tbody tr.rate img {
-    height: 20px;
-    width: auto;
-  }
-}
-.section-4 .table tbody tr td {
+.section-4__table .table__cell {
   padding: 25px;
   text-align: center;
 }
-.section-4 .table tbody tr td.key {
+.section-4__table .table__cell--key {
   background: #9ddbca;
+  background-clip: content-box;
+  padding: 3px;
   width: 40%;
   font-weight: 900;
   font-size: 25px;
@@ -417,11 +415,21 @@ p span {
   text-align: center;
 }
 @media screen and (max-width: 500px) {
-  .section-4 .table tbody tr td.key {
+  .section-4__table .table__cell--key {
     font-size: 13px;
   }
 }
-.section-4 .table tbody tr td h3 {
+.section-4__table .table__rating {
+  height: 32px;
+  width: auto;
+}
+@media screen and (max-width: 500px) {
+  .section-4__table .table__rating {
+    height: 20px;
+    width: auto;
+  }
+}
+.section-4__table .table__number {
   font-weight: 800;
   font-size: 34px;
   letter-spacing: 0%;
@@ -429,11 +437,11 @@ p span {
   color: #ed5a37;
 }
 @media screen and (max-width: 500px) {
-  .section-4 .table tbody tr td h3 {
+  .section-4__table .table__number {
     font-size: 20px;
   }
 }
-.section-4 .table tbody tr td h4 {
+.section-4__table .table__title {
   font-weight: 700;
   font-size: 25px;
   line-height: 150%;
@@ -441,14 +449,14 @@ p span {
   text-align: center;
 }
 @media screen and (max-width: 500px) {
-  .section-4 .table tbody tr td h4 {
+  .section-4__table .table__title {
     font-size: 15px;
   }
 }
-.section-4 .table tbody tr td h4 span {
+.section-4__table .table__title--highlight {
   color: #ed5a37;
 }
-.section-4 .table tbody tr td h5 {
+.section-4__table .table__subtitle {
   font-weight: 500;
   font-size: 20px;
   line-height: 150%;
@@ -456,15 +464,11 @@ p span {
   text-align: center;
 }
 @media screen and (max-width: 500px) {
-  .section-4 .table tbody tr td h5 {
+  .section-4__table .table__subtitle {
     font-size: 12px;
   }
 }
-.section-4 .table tbody tr td img {
-  height: 34px;
-  width: auto;
-}
-.section-4 .content {
+.section-4__content {
   margin-top: 20px;
   background: #9ddbca;
   width: 100%;
@@ -475,7 +479,7 @@ p span {
   gap: 12px;
   padding: 20px 8px;
 }
-.section-4 .content h3 {
+.section-4__content-title {
   font-weight: 900;
   font-size: 32px;
   line-height: 150%;
@@ -484,11 +488,11 @@ p span {
   color: #2c897a;
 }
 @media screen and (max-width: 500px) {
-  .section-4 .content h3 {
+  .section-4__content-title {
     font-size: 16px;
   }
 }
-.section-4 .content div {
+.section-4__content-links {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -496,7 +500,7 @@ p span {
   align-items: center;
   gap: 12px;
 }
-.section-4 .content div a {
+.section-4__content-links-item {
   width: 100%;
   border-radius: 50px;
   box-shadow: 0px 2px 2px 0px rgba(255, 255, 255, 0.2509803922) inset, 0px 2px 2px 0px rgba(0, 0, 0, 0.2509803922);
@@ -510,11 +514,10 @@ p span {
   text-align: center;
 }
 @media screen and (max-width: 500px) {
-  .section-4 .content div a {
+  .section-4__content-links-item {
     font-size: 16px;
   }
 }
-
 .section-5 {
   position: relative;
   width: calc(100% - 65px);
@@ -529,21 +532,21 @@ p span {
     width: calc(100% - 45px);
   }
 }
-.section-5 .dialogue {
+.section-5__dialogue {
   z-index: 100;
 }
-.section-5 .dialogue div {
+.section-5__dialogue-content {
   position: absolute;
   top: -42px;
   left: -26px;
 }
 @media screen and (max-width: 500px) {
-  .section-5 .dialogue div {
+  .section-5__dialogue-content {
     top: -28px;
     left: -9px;
   }
 }
-.section-5 .dialogue p {
+.section-5__dialogue-text {
   font-weight: 700;
   font-size: 23px;
   line-height: 130%;
@@ -552,11 +555,11 @@ p span {
   text-shadow: 0px 2px 2px rgba(255, 255, 255, 0.2509803922), 0px 2px 2px rgba(0, 0, 0, 0.2509803922);
 }
 @media screen and (max-width: 500px) {
-  .section-5 .dialogue p {
+  .section-5__dialogue-text {
     font-size: 13px;
   }
 }
-.section-5 .dialogue img {
+.section-5__dialogue-image {
   position: absolute;
   top: -50px;
   left: -65px;
@@ -564,13 +567,13 @@ p span {
   height: 85px;
 }
 @media screen and (max-width: 500px) {
-  .section-5 .dialogue img {
+  .section-5__dialogue-image {
     height: 65px;
     top: -40px;
     left: -44px;
   }
 }
-.section-5 .content {
+.section-5__content {
   position: relative;
   width: 100%;
   justify-self: flex-end;
@@ -584,7 +587,7 @@ p span {
   align-items: center;
   gap: 5px;
 }
-.section-5 .content h4 {
+.section-5__content-title {
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2509803922);
   color: #ffffff;
   font-weight: 900;
@@ -594,23 +597,22 @@ p span {
   text-align: center;
 }
 @media screen and (max-width: 500px) {
-  .section-5 .content h4 {
+  .section-5__content-title {
     font-size: 18px;
   }
 }
-.section-5 .content img {
+.section-5__content-icon {
   width: 25px;
   height: 25px;
 }
-
-.section-6 .header {
+.section-6__header {
   width: 100%;
   background: url("../img/bg_section_6_title.png");
   background-size: 100% 100%;
   padding: 17px;
   margin-bottom: -1px;
 }
-.section-6 .header h4 {
+.section-6__header-title {
   color: #ffffff;
   font-weight: 900;
   font-size: 30px;
@@ -619,54 +621,54 @@ p span {
   text-align: center;
 }
 @media screen and (max-width: 500px) {
-  .section-6 .header h4 {
+  .section-6__header-title {
     font-size: 20px;
   }
 }
-.section-6 section {
+.section-6__slider {
   position: relative;
   border: 2px solid #2c897a;
   padding: 15px 20px;
 }
 @media screen and (max-width: 500px) {
-  .section-6 section {
+  .section-6__slider {
     padding: 5px 5px;
   }
 }
-.section-6 section p {
+.section-6__slider-text {
   font-weight: 900;
   font-size: 25px;
   line-height: 160%;
   letter-spacing: 0%;
 }
 @media screen and (max-width: 500px) {
-  .section-6 section p {
+  .section-6__slider-text {
     font-size: 13px;
   }
 }
-.section-6 section .swiper-container {
+.section-6__slider-container {
   width: 100%;
   overflow: hidden;
 }
-.section-6 section .swiper-wrapper {
+.section-6__slider .swiper-wrapper {
   display: flex;
   transition: transform 0.3s ease-in-out;
 }
-.section-6 section .swiper-slide {
+.section-6__slider .swiper-slide {
+  width: 100px;
   min-width: 100%;
 }
-.section-6 section .content {
-  width: 1px;
+.section-6__slider-content {
   border: 1px solid #999999;
   border-radius: 7px;
   padding: 7px;
 }
 @media screen and (max-width: 500px) {
-  .section-6 section .content {
+  .section-6__slider-content {
     padding: 0px;
   }
 }
-.section-6 section .content .avatar {
+.section-6__slider-content-avatar {
   width: 84px;
   height: 84px;
   border-radius: 50%;
@@ -674,22 +676,24 @@ p span {
   padding: 6px;
   overflow: hidden;
 }
-.section-6 section .content .avatar img {
+@media screen and (max-width: 500px) {
+  .section-6__slider-content-avatar {
+    width: 64px;
+    height: 64px;
+  }
+}
+.section-6__slider-content-avatar-image {
   width: 70px;
   height: auto;
   background-size: cover;
 }
 @media screen and (max-width: 500px) {
-  .section-6 section .content .avatar {
-    width: 64px;
-    height: 64px;
-  }
-  .section-6 section .content .avatar img {
+  .section-6__slider-content-avatar-image {
     width: 50px;
     height: auto;
   }
 }
-.section-6 section .content .content-header {
+.section-6__slider-content-header {
   padding: 20px;
   display: flex;
   flex-direction: row;
@@ -697,39 +701,39 @@ p span {
   align-items: center;
   gap: 20px;
 }
-.section-6 section .content .content-header .detail {
-  width: 70%;
-}
 @media screen and (max-width: 500px) {
-  .section-6 section .content .content-header {
+  .section-6__slider-content-header {
     padding: 10px;
     gap: 10px;
   }
 }
-.section-6 section .content .content-body {
+.section-6__slider-content-header-detail {
+  width: 70%;
+}
+.section-6__slider-content-body {
   padding: 20px 10px 100px;
 }
 @media screen and (max-width: 500px) {
-  .section-6 section .content .content-body {
+  .section-6__slider-content-body {
     padding: 10px 5px 50px;
   }
 }
-.section-6 section .content .content-footer {
+.section-6__slider-content-footer {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
   padding-right: 10px;
 }
-.section-6 section .content .content-footer a {
-  color: #34998d;
-}
 @media screen and (max-width: 768px) {
-  .section-6 section .content .content-footer {
+  .section-6__slider-content-footer {
     padding-right: 5px;
   }
 }
-.section-6 section .button-prev {
+.section-6__slider-content-footer-link {
+  color: #34998d;
+}
+.section-6__slider .swiper-prev {
   position: absolute;
   top: calc(50% - 35px);
   left: -30px;
@@ -737,37 +741,37 @@ p span {
   width: 64px;
   cursor: pointer;
 }
-.section-6 section .button-prev img {
-  transform: scaleY(-1);
-  width: 100%;
-  height: auto;
-}
 @media screen and (max-width: 500px) {
-  .section-6 section .button-prev {
+  .section-6__slider .swiper-prev {
     width: 54px;
     top: calc(50% - 25px);
     left: -20px;
   }
 }
-.section-6 section .button-next {
+.section-6__slider .swiper-prev-image {
+  transform: scaleY(-1);
+  width: 100%;
+  height: auto;
+}
+.section-6__slider .swiper-next {
   position: absolute;
   top: calc(50% - 35px);
   right: -30px;
   width: 64px;
   cursor: pointer;
 }
-.section-6 section .button-next img {
-  width: 100%;
-  height: auto;
-}
 @media screen and (max-width: 500px) {
-  .section-6 section .button-next {
+  .section-6__slider .swiper-next {
     width: 54px;
     top: calc(50% - 25px);
     right: -20px;
   }
 }
-.section-6 section .button-icon {
+.section-6__slider .swiper-next-image {
+  width: 100%;
+  height: auto;
+}
+.section-6__slider-nav-icon {
   width: 100%;
   aspect-ratio: 1/1;
   display: flex;
@@ -777,12 +781,12 @@ p span {
   background: #ffffff;
   border: 2px solid #000000;
 }
-.section-6 section .button-icon img {
+.section-6__slider-nav-icon-image {
   width: 30px;
   height: 30px;
 }
 @media screen and (max-width: 500px) {
-  .section-6 section .button-icon img {
+  .section-6__slider-nav-icon-image {
     width: 20px;
     height: 20px;
   }

@@ -1,7 +1,7 @@
 const swiperWrapper = document.querySelector(".swiper-wrapper");
 const slides = document.querySelectorAll(".swiper-slide");
-const prevBtn = document.querySelector(".button-prev");
-const nextBtn = document.querySelector(".button-next");
+const prevBtn = document.querySelector(".swiper-prev");
+const nextBtn = document.querySelector(".swiper-next");
 
 let currentIndex = 0;
 
