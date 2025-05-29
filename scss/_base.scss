@@ -28,6 +28,7 @@ a {
   align-items: center;
   flex-direction: column;
   gap: 24px;
+  overflow: hidden;
 
   section {
     width: 100%;
@@ -35,6 +36,10 @@ a {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  }
+
+  @media screen and (max-width: 500px) {
+    padding: 0 20px;
   }
 }
 
@@ -45,7 +50,7 @@ p {
   letter-spacing: 0%;
 
   @media screen and (max-width: 500px) {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   span {

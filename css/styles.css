@@ -28,6 +28,7 @@ a {
   align-items: center;
   flex-direction: column;
   gap: 24px;
+  overflow: hidden;
 }
 .container section {
   width: 100%;
@@ -35,6 +36,11 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+@media screen and (max-width: 500px) {
+  .container {
+    padding: 0 20px;
+  }
 }
 
 p {
@@ -45,7 +51,7 @@ p {
 }
 @media screen and (max-width: 500px) {
   p {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 p span {
@@ -97,7 +103,7 @@ p span {
 }
 @media screen and (max-width: 500px) {
   .section-1 .__title {
-    font-size: 14px;
+    font-size: 18px;
   }
 }
 .section-1 .title h2 {
@@ -173,6 +179,12 @@ p span {
     right: -90px;
   }
 }
+@media screen and (max-width: 415px) {
+  .section-1 .content-wrapper .tutor img {
+    width: 350px;
+    right: -75px;
+  }
+}
 .section-1 .content-wrapper .content {
   width: 70%;
   margin-top: 20px;
@@ -207,17 +219,27 @@ p span {
     width: 160%;
   }
 }
-@media screen and (max-width: 500px) {
-  .section-1 .content-wrapper .content .content-2 {
-    width: 100%;
-  }
-}
 .section-1 .content-wrapper .content .content-3 {
   padding-bottom: 15px;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 768px) {
   .section-1 .content-wrapper .content .content-3 {
-    width: 80%;
+    width: 120%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .section-1 .content-wrapper .content .content-3 {
+    width: 110%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .section-1 .content-wrapper .content .content-3 {
+    width: 92%;
+  }
+}
+@media screen and (max-width: 415px) {
+  .section-1 .content-wrapper .content .content-3 {
+    width: 85%;
   }
 }
 
@@ -253,7 +275,7 @@ p span {
 }
 @media screen and (max-width: 500px) {
   .section-2 .medal h3 {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 .section-2 .rate {
@@ -278,6 +300,21 @@ p span {
   line-height: 110%;
   letter-spacing: 0%;
   color: #000000;
+}
+.section-2 .rate p span {
+  font-size: 20px;
+  color: #ed5a37;
+  font-weight: bold;
+}
+@media screen and (max-width: 500px) {
+  .section-2 .rate p span {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .section-2 .rate p {
+    font-size: 10px;
+  }
 }
 .section-2 .rate img {
   width: auto;
@@ -316,7 +353,6 @@ p span {
   height: 60px;
 }
 .section-3 .content div p {
-  font-weight: 700;
   font-size: 24px;
   line-height: 150%;
   letter-spacing: 0%;
@@ -327,6 +363,7 @@ p span {
   }
 }
 .section-3 .content div p span {
+  font-weight: 700;
   color: #ed5a37;
 }
 
@@ -334,14 +371,12 @@ p span {
   width: 100%;
   padding: 1px;
   border: 1px solid #9ddbca;
-  margin-bottom: 20px;
+  border-collapse: collapse;
 }
-.section-4 .table .rate {
-  img-height: 32px;
-  img-width: auto;
-  padding: 23px;
-}
-.section-4 .table p {
+.section-4 .table thead th {
+  width: 100%;
+  padding: 15px;
+  background: #9ddbca;
   font-weight: 900;
   font-size: 23px;
   line-height: 150%;
@@ -349,79 +384,32 @@ p span {
   text-align: center;
   color: #2c897a;
 }
-.section-4 .table h4 {
-  font-weight: 700;
-  font-size: 25px;
-  line-height: 150%;
-  letter-spacing: 0%;
-  text-align: center;
-}
-@media screen and (max-width: 500px) {
-  .section-4 .table h4 {
-    font-size: 15px;
-  }
-}
-.section-4 .table h4 span {
-  color: #ed5a37;
-}
-.section-4 .table h5 {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 150%;
-  letter-spacing: 0%;
-  text-align: center;
-}
-@media screen and (max-width: 500px) {
-  .section-4 .table h5 {
-    font-size: 12px;
-  }
-}
-.section-4 .table .header {
-  width: 100%;
-  padding: 15px;
-  background: #9ddbca;
-}
-.section-4 .table div {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+.section-4 .table tbody tr {
   border-bottom: 1px solid #9ddbca;
 }
-.section-4 .table div .key {
-  background: #9ddbca;
-  width: 40%;
-  height: 100%;
-  padding: 25px;
-  margin: 1px;
+.section-4 .table tbody tr:last-child {
+  border-bottom: none;
 }
-.section-4 .table div div {
-  border: none;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+.section-4 .table tbody tr.rate {
+  padding: 23px;
 }
-.section-4 .table div img {
-  height: 34px;
+.section-4 .table tbody tr.rate img {
+  height: 32px;
   width: auto;
 }
-.section-4 .table div h3 {
-  font-weight: 800;
-  font-size: 34px;
-  line-height: 128%;
-  letter-spacing: 0%;
-  text-align: center;
-  color: #ed5a37;
-}
 @media screen and (max-width: 500px) {
-  .section-4 .table div h3 {
-    font-size: 24px;
+  .section-4 .table tbody tr.rate img {
+    height: 20px;
+    width: auto;
   }
 }
-.section-4 .table p {
+.section-4 .table tbody tr td {
+  padding: 25px;
+  text-align: center;
+}
+.section-4 .table tbody tr td.key {
+  background: #9ddbca;
+  width: 40%;
   font-weight: 900;
   font-size: 25px;
   line-height: 150%;
@@ -429,19 +417,63 @@ p span {
   text-align: center;
 }
 @media screen and (max-width: 500px) {
-  .section-4 .table p {
+  .section-4 .table tbody tr td.key {
+    font-size: 13px;
+  }
+}
+.section-4 .table tbody tr td h3 {
+  font-weight: 800;
+  font-size: 34px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #ed5a37;
+}
+@media screen and (max-width: 500px) {
+  .section-4 .table tbody tr td h3 {
+    font-size: 20px;
+  }
+}
+.section-4 .table tbody tr td h4 {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+@media screen and (max-width: 500px) {
+  .section-4 .table tbody tr td h4 {
     font-size: 15px;
   }
 }
+.section-4 .table tbody tr td h4 span {
+  color: #ed5a37;
+}
+.section-4 .table tbody tr td h5 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+@media screen and (max-width: 500px) {
+  .section-4 .table tbody tr td h5 {
+    font-size: 12px;
+  }
+}
+.section-4 .table tbody tr td img {
+  height: 34px;
+  width: auto;
+}
 .section-4 .content {
+  margin-top: 20px;
   background: #9ddbca;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 15px;
-  padding: 30px 15px;
+  gap: 12px;
+  padding: 20px 8px;
 }
 .section-4 .content h3 {
   font-weight: 900;
@@ -453,7 +485,7 @@ p span {
 }
 @media screen and (max-width: 500px) {
   .section-4 .content h3 {
-    font-size: 22px;
+    font-size: 16px;
   }
 }
 .section-4 .content div {
@@ -462,14 +494,9 @@ p span {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 15px;
+  gap: 12px;
 }
-@media (max-width: 768px) {
-  .section-4 .content div {
-    flex-direction: column;
-  }
-}
-.section-4 .content div div {
+.section-4 .content div a {
   width: 100%;
   border-radius: 50px;
   box-shadow: 0px 2px 2px 0px rgba(255, 255, 255, 0.2509803922) inset, 0px 2px 2px 0px rgba(0, 0, 0, 0.2509803922);
@@ -483,8 +510,8 @@ p span {
   text-align: center;
 }
 @media screen and (max-width: 500px) {
-  .section-4 .content div div {
-    font-size: 18px;
+  .section-4 .content div a {
+    font-size: 16px;
   }
 }
 
@@ -496,7 +523,11 @@ p span {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+}
+@media screen and (max-width: 500px) {
+  .section-5 {
+    width: calc(100% - 45px);
+  }
 }
 .section-5 .dialogue {
   z-index: 100;
@@ -508,8 +539,8 @@ p span {
 }
 @media screen and (max-width: 500px) {
   .section-5 .dialogue div {
-    top: -33px;
-    left: -16px;
+    top: -28px;
+    left: -9px;
   }
 }
 .section-5 .dialogue p {
@@ -522,7 +553,7 @@ p span {
 }
 @media screen and (max-width: 500px) {
   .section-5 .dialogue p {
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 .section-5 .dialogue img {
@@ -532,6 +563,13 @@ p span {
   width: auto;
   height: 85px;
 }
+@media screen and (max-width: 500px) {
+  .section-5 .dialogue img {
+    height: 65px;
+    top: -40px;
+    left: -44px;
+  }
+}
 .section-5 .content {
   position: relative;
   width: 100%;
@@ -539,12 +577,12 @@ p span {
   background: #ff7e00;
   box-shadow: 0px 20px 30px 0px rgba(255, 255, 255, 0.2509803922) inset, 4px 4px 4px 0px rgba(0, 0, 0, 0.3019607843);
   border-radius: 50px;
-  padding: 20px;
+  padding: 15px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
 }
 .section-5 .content h4 {
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2509803922);
@@ -603,7 +641,7 @@ p span {
 }
 @media screen and (max-width: 500px) {
   .section-6 section p {
-    font-size: 15px;
+    font-size: 13px;
   }
 }
 .section-6 section .swiper-container {
@@ -618,6 +656,7 @@ p span {
   min-width: 100%;
 }
 .section-6 section .content {
+  width: 1px;
   border: 1px solid #999999;
   border-radius: 7px;
   padding: 7px;
@@ -628,17 +667,27 @@ p span {
   }
 }
 .section-6 section .content .avatar {
-  width: 90px;
-  height: 90px;
+  width: 84px;
+  height: 84px;
   border-radius: 50%;
   border: 2px solid #000000;
-  padding: 10px;
+  padding: 6px;
   overflow: hidden;
 }
 .section-6 section .content .avatar img {
   width: 70px;
   height: auto;
   background-size: cover;
+}
+@media screen and (max-width: 500px) {
+  .section-6 section .content .avatar {
+    width: 64px;
+    height: 64px;
+  }
+  .section-6 section .content .avatar img {
+    width: 50px;
+    height: auto;
+  }
 }
 .section-6 section .content .content-header {
   padding: 20px;
@@ -648,14 +697,13 @@ p span {
   align-items: center;
   gap: 20px;
 }
-@media (max-width: 768px) {
-  .section-6 section .content .content-header {
-    flex-direction: column;
-  }
+.section-6 section .content .content-header .detail {
+  width: 70%;
 }
 @media screen and (max-width: 500px) {
   .section-6 section .content .content-header {
     padding: 10px;
+    gap: 10px;
   }
 }
 .section-6 section .content .content-body {
