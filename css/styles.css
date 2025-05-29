@@ -39,7 +39,7 @@ a {
 }
 @media screen and (max-width: 500px) {
   .container {
-    padding: 0 20px;
+    padding: 0 16px;
   }
 }
 
@@ -207,6 +207,11 @@ p span {
   border: 3px solid #ff7e00;
   border-radius: 10px;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2509803922), 4px 4px 4px 0px rgba(0, 0, 0, 0.2509803922) inset;
+}
+@media screen and (max-width: 500px) {
+  .section-1__content-wrapper-content-title {
+    font-size: 18px;
+  }
 }
 .section-1__content-wrapper-content-highlight {
   background-image: linear-gradient(to bottom, transparent 60%, rgba(255, 126, 0, 0.2509803922));
@@ -390,6 +395,11 @@ p span {
   text-align: center;
   color: #2c897a;
 }
+@media screen and (max-width: 500px) {
+  .section-4__table .table__header {
+    font-size: 13px;
+  }
+}
 .section-4__table .table__row {
   border-bottom: 1px solid #9ddbca;
 }
@@ -405,6 +415,7 @@ p span {
 }
 .section-4__table .table__cell--key {
   background: #9ddbca;
+  color: #2c897a;
   background-clip: content-box;
   padding: 3px;
   width: 40%;
@@ -457,11 +468,12 @@ p span {
   color: #ed5a37;
 }
 .section-4__table .table__subtitle {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 20px;
   line-height: 150%;
   letter-spacing: 0%;
   text-align: center;
+  color: #000000;
 }
 @media screen and (max-width: 500px) {
   .section-4__table .table__subtitle {
@@ -476,8 +488,13 @@ p span {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 12px;
+  gap: 9px;
   padding: 20px 8px;
+}
+@media screen and (max-width: 400px) {
+  .section-4__content {
+    padding: 20px 2px;
+  }
 }
 .section-4__content-title {
   font-weight: 900;
@@ -498,13 +515,13 @@ p span {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 12px;
+  gap: 9px;
 }
 .section-4__content-links-item {
   width: 100%;
   border-radius: 50px;
   box-shadow: 0px 2px 2px 0px rgba(255, 255, 255, 0.2509803922) inset, 0px 2px 2px 0px rgba(0, 0, 0, 0.2509803922);
-  padding: 10px;
+  padding: 8px;
   color: #ffffff;
   font-family: Inter;
   font-weight: 700;
@@ -513,7 +530,7 @@ p span {
   letter-spacing: 0%;
   text-align: center;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 625px) {
   .section-4__content-links-item {
     font-size: 16px;
   }
