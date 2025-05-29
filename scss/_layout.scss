@@ -97,13 +97,20 @@
           position: absolute;
           bottom: -15px;
           right: -100px;
-          width: 500px;
+          width: 53vw;
+          max-width: 530px;
+          min-width: 350px;
           object-fit: cover;
           background-position: bottom;
 
-          @media screen and (max-width: 768px) {
-            width: 400px;
+          @media screen and (max-width: 600px) {
+            width: 475px;
             right: -90px;
+          }
+
+          @media screen and (max-width: 500px) {
+            width: 365px;
+            right: -80px;
           }
 
           @media screen and (max-width: 415px) {
@@ -158,8 +165,15 @@
           }
 
           &--2 {
+            max-width: 770px;
+            width: 62vw;
+
             @media screen and (max-width: 768px) {
-              width: 160%;
+              width: 79vw;
+            }
+
+            @media screen and (max-width: 600px) {
+              width: 165%;
             }
           }
 
@@ -170,7 +184,7 @@
             }
 
             @media screen and (max-width: 600px) {
-              width: 110%;
+              width: 85%;
             }
 
             @media screen and (max-width: 500px) {
