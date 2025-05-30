@@ -176,8 +176,8 @@ p span {
 }
 @media screen and (max-width: 600px) {
   .section-1__content-wrapper-tutor-image {
-    width: 475px;
-    right: -90px;
+    width: 433px;
+    right: -100px;
   }
 }
 @media screen and (max-width: 500px) {
@@ -256,7 +256,7 @@ p span {
 }
 @media screen and (max-width: 600px) {
   .section-1__content-wrapper-content-item--3 {
-    width: 85%;
+    width: 103%;
   }
 }
 @media screen and (max-width: 500px) {
