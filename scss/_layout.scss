@@ -188,11 +188,21 @@
             }
 
             @media screen and (max-width: 500px) {
-              width: 92%;
+              width: 103%;
             }
 
             @media screen and (max-width: 415px) {
-              width: 85%;
+              width: 93%;
+            }
+
+            .__locale {
+              @media screen and (max-width: 600px) {
+                width: 112%;
+              }
+
+              @media screen and (max-width: 415px) {
+                width: 116%;
+              }
             }
           }
         }

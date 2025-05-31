@@ -261,12 +261,22 @@ p span {
 }
 @media screen and (max-width: 500px) {
   .section-1__content-wrapper-content-item--3 {
-    width: 92%;
+    width: 103%;
   }
 }
 @media screen and (max-width: 415px) {
   .section-1__content-wrapper-content-item--3 {
-    width: 85%;
+    width: 93%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .section-1__content-wrapper-content-item--3 .__locale {
+    width: 112%;
+  }
+}
+@media screen and (max-width: 415px) {
+  .section-1__content-wrapper-content-item--3 .__locale {
+    width: 116%;
   }
 }
 .section-2__content {
