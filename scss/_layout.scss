@@ -2,8 +2,8 @@
   padding-top: 50px;
 }
 
-.section {
-  &-1 {
+.career-theory {
+  &-top {
     background: url("../img/bg_section_1.png") no-repeat center center;
     background-position: bottom;
     background-size: cover;
@@ -210,7 +210,7 @@
     }
   }
 
-  &-2 {
+  &-rate {
     &__content {
       width: 100%;
       height: 100px;
@@ -294,7 +294,7 @@
     }
   }
 
-  &-3 {
+  &-features {
     gap: 10px;
 
     &__title {
@@ -346,7 +346,7 @@
     }
   }
 
-  &-4 {
+  &-satisfaction {
     &__table {
       width: 100%;
       padding: 2px;
@@ -517,7 +517,7 @@
     }
   }
 
-  &-5 {
+  &-consultation {
     position: relative;
     width: calc(100% - 65px);
     height: 100%;
@@ -607,7 +607,7 @@
     }
   }
 
-  &-6 {
+  &-reviews {
     &__header {
       width: 100%;
       background: url("../img/bg_section_6_title.png");
